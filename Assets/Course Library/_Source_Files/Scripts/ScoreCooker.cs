@@ -8,6 +8,8 @@ public class ScoreCooker : MonoBehaviour
 {
     public TMP_Text ScoreDisplay;
     public float ScoreCount = 0;
+    public bool GameOverChecker;
+
     void Start()
     {
         
@@ -15,7 +17,11 @@ public class ScoreCooker : MonoBehaviour
 
     void Update()
     {
-        ScoreCount = ScoreCount + 1 * Time.deltaTime;
-        ScoreDisplay.text = ((int)ScoreCount).ToString();
+        GameOverChecker = GameObject.Find("Player").GetComponent<PlayerController>().GameOver;
+        if (!GameOverChecker)
+        {
+            ScoreCount = ScoreCount + 1 * Time.deltaTime;
+            ScoreDisplay.text = ((int)ScoreCount).ToString();
+        }
     }
 }
