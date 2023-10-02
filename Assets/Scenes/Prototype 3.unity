@@ -423,7 +423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &644525134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,6 +824,7 @@ GameObject:
   - component: {fileID: 1039978105}
   - component: {fileID: 1039978104}
   - component: {fileID: 1039978106}
+  - component: {fileID: 1039978107}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -879,6 +880,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cf1c366255a24fa3ab0d1694d4206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1039978107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039978103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0f94e7c2b36874da665d854bc952d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameOverScreen: {fileID: 644525133}
+  GameOverCheck: 0
 --- !u!1 &1363262568
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +905,7 @@ GameObject:
   - component: {fileID: 1363262571}
   - component: {fileID: 1363262570}
   - component: {fileID: 1363262569}
+  - component: {fileID: 1363262572}
   m_Layer: 0
   m_Name: ScoreCounter
   m_TagString: Untagged
@@ -1050,6 +1066,20 @@ RectTransform:
   m_AnchoredPosition: {x: 5, y: 0.47}
   m_SizeDelta: {x: 4.6, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1363262572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363262568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f57f84e40bee14a860d5b75b578713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreDisplay: {fileID: 1363262569}
+  ScoreCount: 0
 --- !u!1 &1587277065
 GameObject:
   m_ObjectHideFlags: 0
