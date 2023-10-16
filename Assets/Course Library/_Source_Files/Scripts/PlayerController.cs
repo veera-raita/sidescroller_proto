@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public int jumpPower = 1400;
-    public int gravModifier = 5;
     public bool isOnGround = true;
     private Rigidbody rb = null;
     public bool GameOver = false;
@@ -23,8 +22,8 @@ public class PlayerController : MonoBehaviour
         //set gravity and define rb
         rb = GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
-        Physics.gravity *= gravModifier;
         playerAudio = GetComponent<AudioSource>();
+        Physics.gravity = new Vector3(0, -45.0F, 0);
     }
 
     // Update is called once per frame
