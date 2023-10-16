@@ -2100,6 +2100,8 @@ MonoBehaviour:
   ScoreDisplay: {fileID: 354990429}
   ScoreCount: 0
   GameOverChecker: 0
+  scoreGet: {fileID: 8300000, guid: 6a0372e896e7bbe4baf1832a18f101b9, type: 3}
+  scoreSource: {fileID: 1802361763}
 --- !u!198 &1863601292 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 9125212449759046732, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
